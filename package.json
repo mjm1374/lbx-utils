@@ -1,0 +1,29 @@
+{
+  "name": "lbx-utils",
+  "version": "1.0.0",
+  "description": "Logikbox JS Utils",
+  "main": "index.js",
+  "module": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjm1374/lbx-utils.git"
+  },
+  "keywords": [
+    "utils",
+    "lbx",
+    "Logikbox",
+    "JS"
+  ],
+  "author": "Michael McAllister",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mjm1374/lbx-utils/issues"
+  },
+  "homepage": "https://github.com/mjm1374/lbx-utils#readme",
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
+}
