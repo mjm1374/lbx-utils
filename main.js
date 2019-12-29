@@ -78,3 +78,24 @@ export function hide(el) {
         console.log(`${e.name}: ${e.message}`);
     }
 }
+
+/**
+ * @brief check and toggle an elements visability, 
+ * @param {*} el the Element ID {string}
+ */
+export function toggleDisplay(el) {
+    try {
+        if (el) {
+            let target = document.getElementById(el);
+            if (target.style.display != "none") {
+                setVisible(el, false);
+            } else {
+                setVisible(el, true)
+            }
+        } else {
+            throw new Error("No Element Defined");
+        }
+    } catch (e) {
+        console.log(`${e.name}: ${e.message}`);
+    }
+}
