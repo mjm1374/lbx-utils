@@ -1,8 +1,8 @@
 // ESM syntax is supported.
 /**
- * @brief adds or removes a class on a Element by className
- * @param {*} el the Element ID {string}
- * @param {*} cls the class name to toggle {string}
+ * adds or removes a class on a Element by className
+ * @param {string} el the Element ID
+ * @param {string} cls the class name to toggle 
  */
 export function toggleClass(el, cls) {
     try {
@@ -26,9 +26,9 @@ export function toggleClass(el, cls) {
 }
 
 /**
- * @brief function for setting the DISPLAY property to block or hide, 
- * @param {*} el the Element ID {string}
- * @param {*} visible the value to set {boolean}
+ * function for setting the DISPLAY property to block or hide, 
+ * @param {string} el the Element ID 
+ * @param {boolean} visible the value to set 
  */
 export function setVisible(el, visible) {
     try {
@@ -48,8 +48,8 @@ export function setVisible(el, visible) {
 }
 
 /**
- * @brief shortcut for setVisible Function to show an element, 
- * @param {*} el the Element ID {string}
+ * shortcut for setVisible Function to show an element, 
+ * @param {string} el the Element ID 
  */
 export function show(el) {
     try {
@@ -64,8 +64,8 @@ export function show(el) {
 }
 
 /**
- * @brief shortcut for setVisible Function to hide an element, 
- * @param {*} el the Element ID {string}
+ * shortcut for setVisible Function to hide an element, 
+ * @param {string} el the Element ID
  */
 export function hide(el) {
     try {
@@ -80,8 +80,8 @@ export function hide(el) {
 }
 
 /**
- * @brief check and toggle an elements visability, 
- * @param {*} el the Element ID {string}
+ * check and toggle an elements visability, 
+ * @param {string} el the Element ID {string}
  */
 export function toggleDisplay(el) {
     try {
