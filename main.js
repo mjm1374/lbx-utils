@@ -111,3 +111,20 @@ export function buildMap(obj) {
 	});
 	return map;
 }
+
+/**
+ * 
+ * @param {function} func the function to pass throught to
+ * @param {wait} wait  the wait time to pass throug, default 100
+ * const MyDebouncedFucntion = debounce(myActualFucntion, 500); - 
+ * https://gist.github.com/peduarte/7ee475dd0fae1940f857582ecbb9dc5f
+ */
+export function debounce(func, wait = 100) {
+	let timeout;
+	return function (...args) {
+		clearTimeout(timeout);
+		timeout = setTimeout(() => {
+			func.apply(this, args);
+		}, wait);
+	};
+}
